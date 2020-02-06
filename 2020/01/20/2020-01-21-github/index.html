@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="笔者：邹汉章什么是 Git Git 是一种分布式的版本控制系统。  我们先聊一下什么是版本控制系统。比如写一篇论文，和老师进行意见的沟通，就会不断产生新的论文版本，比如论文1.0,论文2.0，论文最终版，论文最终最终版，论文绝对不变版，论文终极版…为了能够查看、回退到以前的版本，将每个版本的论文都放在一个单独的文件夹中，这就是一种粗糙的版本控制。在软件开发中，我们也有控制软件版本的需求，要求查看一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github网站及桌面客户端的使用">
+<meta property="og:url" content="http://yoursite.com/2020/01/20/2020-01-21-github/index.html">
+<meta property="og:site_name" content="Wizz 后端冬令营">
+<meta property="og:description" content="笔者：邹汉章什么是 Git Git 是一种分布式的版本控制系统。  我们先聊一下什么是版本控制系统。比如写一篇论文，和老师进行意见的沟通，就会不断产生新的论文版本，比如论文1.0,论文2.0，论文最终版，论文最终最终版，论文绝对不变版，论文终极版…为了能够查看、回退到以前的版本，将每个版本的论文都放在一个单独的文件夹中，这就是一种粗糙的版本控制。在软件开发中，我们也有控制软件版本的需求，要求查看一">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://i2.tiimg.com/708163/73d599887d1b1064.png">
+<meta property="og:image" content="http://i1.fuimg.com/708163/3416da0792532e6b.png">
+<meta property="og:image" content="http://i1.fuimg.com/708163/66eec967068e18cb.jpg">
+<meta property="og:image" content="http://i1.fuimg.com/708163/aef21e60fb9aac10.png">
+<meta property="og:image" content="http://i1.fuimg.com/708163/bb5a2beb62cabeeb.jpg">
+<meta property="og:image" content="http://i2.tiimg.com/708163/c87c2164fc58a7af.jpg">
+<meta property="og:image" content="http://i1.fuimg.com/708163/d29556202a93b214.png">
+<meta property="og:image" content="http://i1.fuimg.com/708163/aabd78ec3feea383.png">
+<meta property="og:image" content="http://i1.fuimg.com/708163/2cb3bfe2d360401b.png">
+<meta property="og:image" content="http://i1.fuimg.com/708163/a5575c5d45fa0f06.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/01/20/1iTtit.png">
+<meta property="article:published_time" content="2020-01-20T15:00:00.000Z">
+<meta property="article:modified_time" content="2020-01-20T12:57:38.058Z">
+<meta property="article:author" content="Wizz">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://i2.tiimg.com/708163/73d599887d1b1064.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/01/20/2020-01-21-github/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Github网站及桌面客户端的使用 | Wizz 后端冬令营</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wizz 后端冬令营</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">从 C 到 Golang</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/2020-01-21-github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Github网站及桌面客户端的使用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-20 23:00:00 / 修改时间：20:57:38" itemprop="dateCreated datePublished" datetime="2020-01-20T23:00:00+08:00">2020-01-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="笔者：邹汉章"><a href="#笔者：邹汉章" class="headerlink" title="笔者：邹汉章"></a>笔者：邹汉章</h2><h2 id="什么是-Git"><a href="#什么是-Git" class="headerlink" title="什么是 Git"></a>什么是 Git</h2><blockquote>
+<p>Git 是一种分布式的版本控制系统。</p>
+</blockquote>
+<p>我们先聊一下什么是版本控制系统。比如写一篇论文，和老师进行意见的沟通，就会不断产生新的论文版本，比如论文1.0,论文2.0，论文最终版，论文最终最终版，论文绝对不变版，论文终极版…为了能够查看、回退到以前的版本，将每个版本的论文都放在一个单独的文件夹中，这就是一种粗糙的版本控制。在软件开发中，我们也有控制软件版本的需求，要求查看一行代码在版本更迭中的变化情况，新的版本遇到问题能退回老的版本…所以我们开发了专门的软件来帮助我们管理软件版本。</p>
+<p>聊完了版本控制系统，我们再聊聊什么是分布式。git是Linux的开发者linus开发的。Linux是一个伟大的软件工程项目，有数十万的工程师为其贡献代码。为了保证每个人都可以对最新的版本进行更新、解决不同工程师同时对一个文件进行修改造成的冲突，git具有的分布式特性就能比较好的解决这些问题。</p>
+<p>一般来说，git使用命令行进行操作。但是为了有个直观的印象，我们先学习如何使用界面进行操作。明天再看命令行的部分。</p>
+<h2 id="什么是GitHub"><a href="#什么是GitHub" class="headerlink" title="什么是GitHub"></a>什么是GitHub</h2><p>前面提到，git具有分布式的特点，但是一般来说还是需要一个主要的代码仓库，不同工程师再通过分布式的git来对这个主代码仓库进行代码提交。</p>
+<p>Github是一个专业的网站，为开发者提供Git仓库的托管服务，是一个让开发者与朋友、同事、同学及陌生人共享代码的完美场所。</p>
+<p>Github上公开的软件源代码全部由Git进行管理，因此理解Git是熟练使用Github的关键所在。本文不对Git过多赘述，我们先学习网站上的东西。</p>
+<h2 id="Github网站的使用"><a href="#Github网站的使用" class="headerlink" title="Github网站的使用"></a>Github网站的使用</h2><ol>
+<li><p>注册Github</p>
+<p> 使用电子邮件注册GitHub账户</p>
+<p> <a href="https://github.com/" target="_blank" rel="noopener">注册网址</a>  </p>
+</li>
+<li><p>创建代码仓库</p>
+<p> 点击绿色‘New’按钮创建仓库  </p>
+<p> <img src="http://i2.tiimg.com/708163/73d599887d1b1064.png" alt="new"></p>
+<p> 可以将代码库设为公开/私密模式  </p>
+<p> <img src="http://i1.fuimg.com/708163/3416da0792532e6b.png" alt="mode"></p>
+</li>
+<li><p>Hello Github!</p>
+<p> 点击create new file</p>
+<p> <img src="http://i1.fuimg.com/708163/66eec967068e18cb.jpg" alt="Markdown"></p>
+<p> 写下第一行代码  </p>
+<p> <img src="http://i1.fuimg.com/708163/aef21e60fb9aac10.png" alt="Markdown"></p>
+</li>
+<li><p>探索开源世界</p>
+<p> 点击Explore可以看到较为流行的开源项目</p>
+<p> <img src="http://i1.fuimg.com/708163/bb5a2beb62cabeeb.jpg" alt="Markdown"></p>
+<p> 当看到喜欢的项目时，点击Star可以持续关注该项目，开源项目的星数体现了它的受欢迎程度。</p>
+<p> <img src="http://i2.tiimg.com/708163/c87c2164fc58a7af.jpg" alt="Markdown"></p>
+</li>
+</ol>
+<h2 id="使用GitHub客户端"><a href="#使用GitHub客户端" class="headerlink" title="使用GitHub客户端"></a>使用GitHub客户端</h2><h3 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h3><p><a href="https://desktop.github.com/" target="_blank" rel="noopener">官方下载链接</a>  </p>
+<p>假如官方链接因网络原因无法下载，可以使用：<br>方案一：<a href="http://www.downza.cn/soft/203788.html" target="_blank" rel="noopener">盗版链接</a></p>
+<p>方案二：Chrome浏览器SetupVPN插件  </p>
+<h3 id="创建一个仓库"><a href="#创建一个仓库" class="headerlink" title="创建一个仓库"></a>创建一个仓库</h3><p>1、点击左上角的File —&gt; New repository，创建一个新的代码库，填写相应的信息：</p>
+<p><img src="http://i1.fuimg.com/708163/d29556202a93b214.png" alt="Markdown"></p>
+<p>2、在电脑上找到我们本地路径，目录结构如图所示：（注意：.git文件是隐藏文件，且不能删除）</p>
+<p><img src="http://i1.fuimg.com/708163/aabd78ec3feea383.png" alt="Markdown"></p>
+<p>3、此时，只是在本地建立好了相应的本地仓库，GitHub网站上面还未上传。点击客户端上的 Publish repository 按钮进行上传，如下图：  </p>
+<p><img src="http://i1.fuimg.com/708163/2cb3bfe2d360401b.png" alt="Markdown"></p>
+<p>4、对要上传的仓库进行描述：  </p>
+<p><img src="http://i1.fuimg.com/708163/a5575c5d45fa0f06.png" alt="Markdown"></p>
+<p>上传完后，新建的仓库已经成功提交到GitHub，登录GitHub网站，进入仓库（点击右上角头像，选择repositories），可以看到我们刚刚创建的仓库了。</p>
+<h3 id="提交更新"><a href="#提交更新" class="headerlink" title="提交更新"></a>提交更新</h3><p>当更改了代码以后，要提交到github的中心仓库，才能被别人接收。</p>
+<p>具体操作分两步，见图。</p>
+<p><img src="https://s2.ax1x.com/2020/01/20/1iTtit.png" alt="commit.png"></p>
+<h3 id="拉取更新"><a href="#拉取更新" class="headerlink" title="拉取更新"></a>拉取更新</h3><p>如果别人提交了代码，自己应当把新的代码下载到本地，才能看到更新。</p>
+<p>具体操作就是点击右上角的 fetch origin</p>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><p>Jetbrains公司大多数IDE具有一键上传代码到Github的功能，例如：<a href="https://blog.csdn.net/beyond_f4/article/details/80626440" target="_blank" rel="noopener">Pycharm链接Github</a>  </p>
+<h2 id="其他的话"><a href="#其他的话" class="headerlink" title="其他的话"></a>其他的话</h2><p>本博客其实也是采用 Git 进行版本控制，并且由 Github 提供代码托管服务。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/20/2020-01-20-%E6%96%B9%E6%B3%95_%E6%96%B9%E6%B3%95%E5%80%BC/" rel="prev" title="方法:方法值">
+      <i class="fa fa-chevron-left"></i> 方法:方法值
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/21/2020-01-22-git/" rel="next" title="Git 的使用">
+      Git 的使用 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#笔者：邹汉章"><span class="nav-number">1.</span> <span class="nav-text">笔者：邹汉章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Git"><span class="nav-number">2.</span> <span class="nav-text">什么是 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是GitHub"><span class="nav-number">3.</span> <span class="nav-text">什么是GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github网站的使用"><span class="nav-number">4.</span> <span class="nav-text">Github网站的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用GitHub客户端"><span class="nav-number">5.</span> <span class="nav-text">使用GitHub客户端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端下载"><span class="nav-number">5.1.</span> <span class="nav-text">客户端下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建一个仓库"><span class="nav-number">5.2.</span> <span class="nav-text">创建一个仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交更新"><span class="nav-number">5.3.</span> <span class="nav-text">提交更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拉取更新"><span class="nav-number">5.4.</span> <span class="nav-text">拉取更新</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拓展阅读"><span class="nav-number">6.</span> <span class="nav-text">拓展阅读</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他的话"><span class="nav-number">7.</span> <span class="nav-text">其他的话</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Wizz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wizz</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

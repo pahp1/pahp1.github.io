@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Wizz 后端冬令营">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="Wizz 后端冬令营">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Wizz">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>Wizz 后端冬令营</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wizz 后端冬令营</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">从 C 到 Golang</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/26/2020-01-27-Go%E5%B9%B6%E5%8F%91%E4%B8%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/26/2020-01-27-Go%E5%B9%B6%E5%8F%91%E4%B8%AD/" class="post-title-link" itemprop="url">Go并发中</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-26 23:00:00" itemprop="dateCreated datePublished" datetime="2020-01-26T23:00:00+08:00">2020-01-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-27 12:36:37" itemprop="dateModified" datetime="2020-01-27T12:36:37+08:00">2020-01-27</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>博主水平不够,这3天请自己看看书:&gt;</p>
+<p>Sorry &lt;( _ _ )&gt;</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/25/2020-01-26-Go%E5%B9%B6%E5%8F%91%E4%B8%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/25/2020-01-26-Go%E5%B9%B6%E5%8F%91%E4%B8%8A/" class="post-title-link" itemprop="url">Go并发上</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-25 23:00:00 / 修改时间：22:11:59" itemprop="dateCreated datePublished" datetime="2020-01-25T23:00:00+08:00">2020-01-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="了解-Go-并发"><a href="#了解-Go-并发" class="headerlink" title="了解 Go 并发"></a>了解 Go 并发</h2><blockquote>
+<p>Go 的并发几乎是 Golang语法 最引以为豪的一个特性！</p>
+</blockquote>
+<p>为了了解Go的并发，我们稍微了解一下并发。来个实际的例子。</p>
+<p>比如 func Download() 是一个函数，用于下载文件。每次执行都要消耗1s的时间。要求这个函数执行10次。</p>
+<p>一般来说，程序写成了这样。i=0 的函数执行完毕，才开始进行 i=1 时的函数。这样大约需要 10s 运行函数。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ &#123;</span><br><span class="line">    DownLoad();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>但通过并行化的方法，让 i=0，i=1，i=2 … i=9 时的10个函数都同时开始，那么只需要1秒，所有函数就都运行完成了。这样就节约了时间。</p>
+<p>在 c java 中，进行并行化，需要完成非常繁琐的操作。但是，在 go 中，只要这么操作</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ &#123;</span><br><span class="line">   <span class="keyword">go</span> DownLoad();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>就能完成并行化了。毕竟作为和语言名相同的关键字，关键字go 非常强大。在 golang 中，完成了基本的学习后，凭感觉来就可以写出很好的并行化程序。但是在 java 中，像这样瞎写一通会造成一大堆问题。这也是 golang 的优越之处。</p>
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>我水平不高，目前还在日本旅游，还在担心国内的肺炎情况，所以也没有准备课程的时间了…请学习者加油，这3天简单领略一下并发的内容。看不懂或者还有时间的话温习一下接口。冲鸭！！！</p>
+<h2 id="未来展望"><a href="#未来展望" class="headerlink" title="未来展望"></a>未来展望</h2><p>对于语法学习来说，这一阶段已经到头了。相信坚持下来的学习者，用golang来写一些简单的oj题已经完全没问题了。接下来，我们将准备实现一个简单的后端项目。只有go的语法是不够的，还需要学习后端相关的一些知识。完成go的学习以后，我们会花6天学习http jwt rest mysql linux 这种东西。然后，我们就回去实现项目。奥里给 ~</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/24/2020-01-25-%E6%8E%A5%E5%8F%A3%E4%B8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/24/2020-01-25-%E6%8E%A5%E5%8F%A3%E4%B8%8B/" class="post-title-link" itemprop="url">接口下</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-24 23:00:00" itemprop="dateCreated datePublished" datetime="2020-01-24T23:00:00+08:00">2020-01-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-23 19:29:41" itemprop="dateModified" datetime="2020-01-23T19:29:41+08:00">2020-01-23</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>博主水平不够,这3天请自己看看书:&gt;</p>
+<p>Sorry &lt;( _ _ )&gt;</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/23/2020-01-24-%E6%8E%A5%E5%8F%A3%E4%B8%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/23/2020-01-24-%E6%8E%A5%E5%8F%A3%E4%B8%AD/" class="post-title-link" itemprop="url">接口中</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-23 23:00:00 / 修改时间：19:29:02" itemprop="dateCreated datePublished" datetime="2020-01-23T23:00:00+08:00">2020-01-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>博主水平不够,这3天请自己看看书:&gt;</p>
+<p>Sorry &lt;( _ _ )&gt;</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/22/2020-01-23-%E6%8E%A5%E5%8F%A3%E4%B8%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/22/2020-01-23-%E6%8E%A5%E5%8F%A3%E4%B8%8A/" class="post-title-link" itemprop="url">接口上</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-22 23:00:00 / 修改时间：20:36:24" itemprop="dateCreated datePublished" datetime="2020-01-22T23:00:00+08:00">2020-01-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="接口简介"><a href="#接口简介" class="headerlink" title="接口简介"></a>接口简介</h2><p>我们先讨论什么是接口，为什么要接口这2个问题。</p>
+<p>什么是接口？一个接口是一系列方法名称、参数、返回值（除了没有具体的实现）的集合。对于结构体s来说，如果结构体s拥有接口i包含的所有方法，那么称为s实现了i。这一段话有点枯燥，可以回过来再看。</p>
+<p>为什么要有 接口 这个语法？这是为了更加方便组织程序结构。想象一下，一般来说，笔记本电脑有很多种外设。但是如果不同外设使用不同的线，圆的方的三角形的，那么电脑为了这些线可以插进去，非要有几十个洞洞不可。实际操作中，我们先定义了一种标准的接口：USB。这样，电脑只用一个usb洞，外设都用usb线，就大大优化了体验。Golang中的接口也起到了这个作用。有时候我们写代码就像造电脑，但是要求和别人的代码（就像电脑外设）进行交互。不可能有几十种外设，我们的电脑就要做几十个洞。而且，我们造电脑的时候，甚至外设还没开始造，我们连外设的线长什么样都不知道，造不出洞。所以我们先定义一个接口（相当于USB标准），然后我们的电脑上只留出洞，让别人的代码都遵循接口规范，就可以优雅的完成需求了。</p>
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>难度还是有点大，我不知道怎么合理的安排学习进度。这一章有3天的学习时间，但对于初学者估计是不够用的。建议慢慢看，第一次先把最基本的使用方法理解，以后再看如何自己设计接口、以及极端情景下的一些问题。</p>
+<p>冲鸭！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/21/2020-01-22-git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/21/2020-01-22-git/" class="post-title-link" itemprop="url">Git 的使用</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-21 23:00:00" itemprop="dateCreated datePublished" datetime="2020-01-21T23:00:00+08:00">2020-01-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-20 21:15:40" itemprop="dateModified" datetime="2020-01-20T21:15:40+08:00">2020-01-20</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="笔者：张淇亮"><a href="#笔者：张淇亮" class="headerlink" title="笔者：张淇亮"></a>笔者：张淇亮</h2><h2 id="相关资源"><a href="#相关资源" class="headerlink" title="相关资源"></a>相关资源</h2><p>可以去 <a href="https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw" target="_blank" rel="noopener">https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw</a> 下载相关资源。</p>
+<p>先去看 从0学习git，可以大致有一个印象，日常的操作基本就没有问题了。另外，里面有一本 Pro Git，如果可以看懂，可以说 Git 就懂了。最后，还有 Git 的学习视频。</p>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
+<p>Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。</p>
+<p>Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。</p>
+<h2 id="Git-安装配置"><a href="#Git-安装配置" class="headerlink" title="Git 安装配置"></a>Git 安装配置</h2><p>在使用Git前我们需要先安装 Git。Git 目前支持 Linux/Unix、Solaris、Mac和 Windows 平台上运行。</p>
+<p>Git 各平台安装包下载地址为：</p>
+<p><a href="http://git-scm.com/downloads" target="_blank" rel="noopener">http://git-scm.com/downloads</a></p>
+<p>详细参考</p>
+<p><a href="https://www.runoob.com/git/git-install-setup.html" target="_blank" rel="noopener">https://www.runoob.com/git/git-install-setup.html</a></p>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>我们先来理解下Git 工作区、暂存区和版本库概念</p>
+<p>工作区：就是你在电脑里能看到的目录。</p>
+<p>暂存区：英文叫stage, 或index。一般存放在 “.git目录下” 下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</p>
+<p>版本库：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。</p>
+<h2 id="Git命令行操作"><a href="#Git命令行操作" class="headerlink" title="Git命令行操作"></a>Git命令行操作</h2><h3 id="本地库的操作"><a href="#本地库的操作" class="headerlink" title="本地库的操作"></a>本地库的操作</h3><p>本地库的初始化（创建本地库）git init</p>
+<p>在创建好的文件夹目录下执行 git init命令，系统自动生成.git文件夹</p>
+<p>git clone</p>
+<p>使用 git clone 拷贝一个 Git 仓库到本地，让自己能够查看该项目，或者进行修改。</p>
+<p>如果你需要与他人合作一个项目，或者想要复制一个项目，看看代码，你就可以克隆那个项目。 执行命令：</p>
+<p>git clone [url]</p>
+<p>[url] 为你想要复制的项目，就可以了。</p>
+<p>git push命令用于将本地分支的更新，推送到远程主机。它的格式与git pull命令相仿</p>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>git init ——初始化，创建git仓库</p>
+<p>git add filename ——添加文件</p>
+<p>git commit -m “日志说明” ——提交文件</p>
+<p>git log / git log –pretty=oneline</p>
+<p>git reset –hard commit_id ——回滚到指定版本</p>
+<p>git reflog ——命令历史</p>
+<p>git checkout – filename ——工作区撤销，与暂存区相同</p>
+<p>git reset HEAD filename——暂存区file撤回到工作区</p>
+<p>git rm filename ——删除文件</p>
+<p>查看分支：git branch</p>
+<p>创建分支：git branch “name”</p>
+<p>切换分支：git checkout “name”</p>
+<p>创建+切换分支：git checkout -b “name”</p>
+<p>合并某分支到当前分支：git merge “name”</p>
+<p>删除分支：git branch -d “name”</p>
+<p>当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。</p>
+<p>远程库</p>
+<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:zzl3471917/库名.git ——本地与远程建立联系</p>
+<p>git push -u origin master ——推送本地文件（第一次要加-u来关联）</p>
+<p>git clone ——克隆远程仓库到本地</p>
+<p>查看远程库信息，使用git remote -v</p>
+<p>本地新建的分支如果不推送到远程，对其他人就是不可见的；</p>
+<p>从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；</p>
+<p>在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；</p>
+<p>建立本地分支和远程分支的关联，使用git branch –set-upstream branch-name origin/branch-name；</p>
+<p>从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。</p>
+<p>参考 <a href="https://www.runoob.com/git/git-basic-operations.html" target="_blank" rel="noopener">https://www.runoob.com/git/git-basic-operations.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/2020-01-21-github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/20/2020-01-21-github/" class="post-title-link" itemprop="url">Github网站及桌面客户端的使用</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-20 23:00:00 / 修改时间：20:57:38" itemprop="dateCreated datePublished" datetime="2020-01-20T23:00:00+08:00">2020-01-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="笔者：邹汉章"><a href="#笔者：邹汉章" class="headerlink" title="笔者：邹汉章"></a>笔者：邹汉章</h2><h2 id="什么是-Git"><a href="#什么是-Git" class="headerlink" title="什么是 Git"></a>什么是 Git</h2><blockquote>
+<p>Git 是一种分布式的版本控制系统。</p>
+</blockquote>
+<p>我们先聊一下什么是版本控制系统。比如写一篇论文，和老师进行意见的沟通，就会不断产生新的论文版本，比如论文1.0,论文2.0，论文最终版，论文最终最终版，论文绝对不变版，论文终极版…为了能够查看、回退到以前的版本，将每个版本的论文都放在一个单独的文件夹中，这就是一种粗糙的版本控制。在软件开发中，我们也有控制软件版本的需求，要求查看一行代码在版本更迭中的变化情况，新的版本遇到问题能退回老的版本…所以我们开发了专门的软件来帮助我们管理软件版本。</p>
+<p>聊完了版本控制系统，我们再聊聊什么是分布式。git是Linux的开发者linus开发的。Linux是一个伟大的软件工程项目，有数十万的工程师为其贡献代码。为了保证每个人都可以对最新的版本进行更新、解决不同工程师同时对一个文件进行修改造成的冲突，git具有的分布式特性就能比较好的解决这些问题。</p>
+<p>一般来说，git使用命令行进行操作。但是为了有个直观的印象，我们先学习如何使用界面进行操作。明天再看命令行的部分。</p>
+<h2 id="什么是GitHub"><a href="#什么是GitHub" class="headerlink" title="什么是GitHub"></a>什么是GitHub</h2><p>前面提到，git具有分布式的特点，但是一般来说还是需要一个主要的代码仓库，不同工程师再通过分布式的git来对这个主代码仓库进行代码提交。</p>
+<p>Github是一个专业的网站，为开发者提供Git仓库的托管服务，是一个让开发者与朋友、同事、同学及陌生人共享代码的完美场所。</p>
+<p>Github上公开的软件源代码全部由Git进行管理，因此理解Git是熟练使用Github的关键所在。本文不对Git过多赘述，我们先学习网站上的东西。</p>
+<h2 id="Github网站的使用"><a href="#Github网站的使用" class="headerlink" title="Github网站的使用"></a>Github网站的使用</h2><ol>
+<li><p>注册Github</p>
+<p> 使用电子邮件注册GitHub账户</p>
+<p> <a href="https://github.com/" target="_blank" rel="noopener">注册网址</a>  </p>
+</li>
+<li><p>创建代码仓库</p>
+<p> 点击绿色‘New’按钮创建仓库  </p>
+<p> <img src="http://i2.tiimg.com/708163/73d599887d1b1064.png" alt="new"></p>
+<p> 可以将代码库设为公开/私密模式  </p>
+<p> <img src="http://i1.fuimg.com/708163/3416da0792532e6b.png" alt="mode"></p>
+</li>
+<li><p>Hello Github!</p>
+<p> 点击create new file</p>
+<p> <img src="http://i1.fuimg.com/708163/66eec967068e18cb.jpg" alt="Markdown"></p>
+<p> 写下第一行代码  </p>
+<p> <img src="http://i1.fuimg.com/708163/aef21e60fb9aac10.png" alt="Markdown"></p>
+</li>
+<li><p>探索开源世界</p>
+<p> 点击Explore可以看到较为流行的开源项目</p>
+<p> <img src="http://i1.fuimg.com/708163/bb5a2beb62cabeeb.jpg" alt="Markdown"></p>
+<p> 当看到喜欢的项目时，点击Star可以持续关注该项目，开源项目的星数体现了它的受欢迎程度。</p>
+<p> <img src="http://i2.tiimg.com/708163/c87c2164fc58a7af.jpg" alt="Markdown"></p>
+</li>
+</ol>
+<h2 id="使用GitHub客户端"><a href="#使用GitHub客户端" class="headerlink" title="使用GitHub客户端"></a>使用GitHub客户端</h2><h3 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h3><p><a href="https://desktop.github.com/" target="_blank" rel="noopener">官方下载链接</a>  </p>
+<p>假如官方链接因网络原因无法下载，可以使用：<br>方案一：<a href="http://www.downza.cn/soft/203788.html" target="_blank" rel="noopener">盗版链接</a></p>
+<p>方案二：Chrome浏览器SetupVPN插件  </p>
+<h3 id="创建一个仓库"><a href="#创建一个仓库" class="headerlink" title="创建一个仓库"></a>创建一个仓库</h3><p>1、点击左上角的File —&gt; New repository，创建一个新的代码库，填写相应的信息：</p>
+<p><img src="http://i1.fuimg.com/708163/d29556202a93b214.png" alt="Markdown"></p>
+<p>2、在电脑上找到我们本地路径，目录结构如图所示：（注意：.git文件是隐藏文件，且不能删除）</p>
+<p><img src="http://i1.fuimg.com/708163/aabd78ec3feea383.png" alt="Markdown"></p>
+<p>3、此时，只是在本地建立好了相应的本地仓库，GitHub网站上面还未上传。点击客户端上的 Publish repository 按钮进行上传，如下图：  </p>
+<p><img src="http://i1.fuimg.com/708163/2cb3bfe2d360401b.png" alt="Markdown"></p>
+<p>4、对要上传的仓库进行描述：  </p>
+<p><img src="http://i1.fuimg.com/708163/a5575c5d45fa0f06.png" alt="Markdown"></p>
+<p>上传完后，新建的仓库已经成功提交到GitHub，登录GitHub网站，进入仓库（点击右上角头像，选择repositories），可以看到我们刚刚创建的仓库了。</p>
+<h3 id="提交更新"><a href="#提交更新" class="headerlink" title="提交更新"></a>提交更新</h3><p>当更改了代码以后，要提交到github的中心仓库，才能被别人接收。</p>
+<p>具体操作分两步，见图。</p>
+<p><img src="https://s2.ax1x.com/2020/01/20/1iTtit.png" alt="commit.png"></p>
+<h3 id="拉取更新"><a href="#拉取更新" class="headerlink" title="拉取更新"></a>拉取更新</h3><p>如果别人提交了代码，自己应当把新的代码下载到本地，才能看到更新。</p>
+<p>具体操作就是点击右上角的 fetch origin</p>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><p>Jetbrains公司大多数IDE具有一键上传代码到Github的功能，例如：<a href="https://blog.csdn.net/beyond_f4/article/details/80626440" target="_blank" rel="noopener">Pycharm链接Github</a>  </p>
+<h2 id="其他的话"><a href="#其他的话" class="headerlink" title="其他的话"></a>其他的话</h2><p>本博客其实也是采用 Git 进行版本控制，并且由 Github 提供代码托管服务。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/20/2020-01-20-%E6%96%B9%E6%B3%95_%E6%96%B9%E6%B3%95%E5%80%BC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/20/2020-01-20-%E6%96%B9%E6%B3%95_%E6%96%B9%E6%B3%95%E5%80%BC/" class="post-title-link" itemprop="url">方法:方法值</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-20 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-20T00:00:00+08:00">2020-01-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-19 22:19:57" itemprop="dateModified" datetime="2020-01-19T22:19:57+08:00">2020-01-19</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="书籍安利-和-学习方法"><a href="#书籍安利-和-学习方法" class="headerlink" title="书籍安利 和 学习方法"></a>书籍安利 和 学习方法</h2><p>具体请参照 2020-01-12 的博客，下载 <a href="https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw" target="_blank" rel="noopener">Go语言圣经</a></p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="p211-6-3-通过嵌入结构体来扩展类型"><a href="#p211-6-3-通过嵌入结构体来扩展类型" class="headerlink" title="p211 6.3 通过嵌入结构体来扩展类型"></a>p211 6.3 通过嵌入结构体来扩展类型</h3><p>有点难度，看情况看不看</p>
+<h3 id="p215-6-4-方法值和方法表达式"><a href="#p215-6-4-方法值和方法表达式" class="headerlink" title="p215 6.4 方法值和方法表达式"></a>p215 6.4 方法值和方法表达式</h3><p>和 函数值 相同，方法也有对应的概念:方法值，至少要掌握语法</p>
+<h3 id="p217-6-5-示例-Bit数组"><a href="#p217-6-5-示例-Bit数组" class="headerlink" title="p217 6.5 示例: Bit数组"></a>p217 6.5 示例: Bit数组</h3><p>例子难度都挺大</p>
+<h3 id="p221-6-6-封装"><a href="#p221-6-6-封装" class="headerlink" title="p221 6.6 封装"></a>p221 6.6 封装</h3><p>挺重要的，一个结构体中只有大写字母开头的字段才可以被外界访问，小写开头就不行。对于忘记这个语法的人来说是一个小坑。</p>
+<h2 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h2><ul>
+<li><p><a href="https://www.runoob.com/go/go-method.html" target="_blank" rel="noopener">菜鸟教程</a> 相关章节</p>
+</li>
+<li><p><a href="https://learnku.com/docs/the-way-to-go/105-anonymous-field-and-embedded-structure/3643" target="_blank" rel="noopener">Go 入门指南</a> 相关章节</p>
+</li>
+</ul>
+<h2 id="每日打卡"><a href="#每日打卡" class="headerlink" title="每日打卡"></a>每日打卡</h2><p>是否熟悉了方法的语法知识，以后看实际代码时不会因为认不出这章的语法而懵逼</p>
+<p><a href="https://ks.wjx.top/jq/54478443.aspx" target="_blank" rel="noopener">https://ks.wjx.top/jq/54478443.aspx</a></p>
+<h2 id="明日学习安排"><a href="#明日学习安排" class="headerlink" title="明日学习安排"></a>明日学习安排</h2><p>github的使用</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/19/2020-01-19-%E6%96%B9%E6%B3%95_%E5%A3%B0%E6%98%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/19/2020-01-19-%E6%96%B9%E6%B3%95_%E5%A3%B0%E6%98%8E/" class="post-title-link" itemprop="url">方法:声明</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-19 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-19T00:00:00+08:00">2020-01-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-18 23:27:51" itemprop="dateModified" datetime="2020-01-18T23:27:51+08:00">2020-01-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="书籍安利-和-学习方法"><a href="#书籍安利-和-学习方法" class="headerlink" title="书籍安利 和 学习方法"></a>书籍安利 和 学习方法</h2><p>具体请参照 2020-01-12 的博客，下载 <a href="https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw" target="_blank" rel="noopener">Go语言圣经</a></p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="p203-6-1-方法声明"><a href="#p203-6-1-方法声明" class="headerlink" title="p203 6.1 方法声明"></a>p203 6.1 方法声明</h3><p>方法是一种特殊的函数。我们先聊一下什么时候使用方法。使用场景就是比方说我们自己定义了一个结构体，再写了一个和这个结构体密切相关的函数。那么在逻辑上可以认为，这个函数“属于”结构体，因为没有这个结构体，这个函数就没有意义。举个例子，我们先写了一个结构体“数组”，再定义函数“向数组结构体添加元素a”。显然，这个函数就是为了结构体而诞生的。这时候，我们可以把函数改成方法的样子，用来在代码层面表示出这一层意义。具体怎么做可以看书。</p>
+<h3 id="p206-6-2-基于指针对象的方法"><a href="#p206-6-2-基于指针对象的方法" class="headerlink" title="p206 6.2 基于指针对象的方法"></a>p206 6.2 基于指针对象的方法</h3><p>每次都完整的将结构体作为参数进行传递，可能会造成性能问题。可以使用指针。这在C语言中也有类似的概念。</p>
+<h2 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h2><ul>
+<li><p><a href="https://www.runoob.com/go/go-method.html" target="_blank" rel="noopener">菜鸟教程</a> 相关章节</p>
+</li>
+<li><p><a href="https://learnku.com/docs/the-way-to-go/105-anonymous-field-and-embedded-structure/3643" target="_blank" rel="noopener">Go 入门指南</a> 相关章节</p>
+</li>
+</ul>
+<h2 id="每日打卡"><a href="#每日打卡" class="headerlink" title="每日打卡"></a>每日打卡</h2><p>是否简单理解了方法</p>
+<p><a href="https://ks.wjx.top/jq/54465262.aspx" target="_blank" rel="noopener">https://ks.wjx.top/jq/54465262.aspx</a></p>
+<h2 id="明日学习安排"><a href="#明日学习安排" class="headerlink" title="明日学习安排"></a>明日学习安排</h2><p>方法:方法值</p>
+<h2 id="其他的话"><a href="#其他的话" class="headerlink" title="其他的话"></a>其他的话</h2><p>比较尴尬，今天我右手摔伤了，打字有点吃力。下周我要去北海道溜达一周，希望不断更，冲鸭~</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/18/2020-01-18-%E5%87%BD%E6%95%B0_%E5%87%BD%E6%95%B0%E5%80%BC,%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/18/2020-01-18-%E5%87%BD%E6%95%B0_%E5%87%BD%E6%95%B0%E5%80%BC,%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">函数:声明,递归,错误</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-18 00:00:00 / 修改时间：23:00:05" itemprop="dateCreated datePublished" datetime="2020-01-18T00:00:00+08:00">2020-01-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="书籍安利-和-学习方法"><a href="#书籍安利-和-学习方法" class="headerlink" title="书籍安利 和 学习方法"></a>书籍安利 和 学习方法</h2><p>具体请参照 2020-01-12 的博客，下载 <a href="https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw" target="_blank" rel="noopener">Go语言圣经</a></p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="p177-5-5-函数值"><a href="#p177-5-5-函数值" class="headerlink" title="p177 5.5 函数值"></a>p177 5.5 函数值</h3><p>其实函数本身，也可以作为值来处理。也就是说，可以把一个函数当成变量。这听上去很神奇，但它的确能实现很多有趣的功能。</p>
+<p>但是例子还是挺难的，就看看前面的简单例子理解理解就好。</p>
+<h3 id="p180-5-6-匿名函数"><a href="#p180-5-6-匿名函数" class="headerlink" title="p180 5.6 匿名函数"></a>p180 5.6 匿名函数</h3><p>主要认识到如何用一种轻便的方式写函数，还是挺实用的。后面的闭包有点玄学，按兴趣。</p>
+<h2 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h2><ul>
+<li><p><a href="https://www.runoob.com/go/go-functions.html" target="_blank" rel="noopener">菜鸟教程</a> 相关章节</p>
+</li>
+<li><p><a href="https://learnku.com/docs/the-way-to-go/take-the-function-as-a-parameter/3605" target="_blank" rel="noopener">Go 入门指南</a> 相关章节</p>
+</li>
+</ul>
+<h2 id="每日打卡"><a href="#每日打卡" class="headerlink" title="每日打卡"></a>每日打卡</h2><p>简述具体看了哪些内容，最好有自己的理解</p>
+<p><a href="https://www.wjx.cn/jq/54441620.aspx" target="_blank" rel="noopener">https://www.wjx.cn/jq/54441620.aspx</a></p>
+<h2 id="明日学习安排"><a href="#明日学习安排" class="headerlink" title="明日学习安排"></a>明日学习安排</h2><p>方法:声明</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Wizz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wizz</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

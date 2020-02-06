@@ -1,188 +1,1007 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-  <title>Pahp1&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Be Better">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pahp1&#39;s Blog">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Wizz 后端冬令营">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Pahp1&#39;s Blog">
-<meta property="og:description" content="Be Better">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:site_name" content="Wizz 后端冬令营">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Wizz">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pahp1&#39;s Blog">
-<meta name="twitter:description" content="Be Better">
+
+<link rel="canonical" href="http://yoursite.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false
+  };
+</script>
+
+  <title>Wizz 后端冬令营</title>
   
-    <link rel="alternate" href="/atom.xml" title="Pahp1&#39;s Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Pahp1&#39;s Blog</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">征途是星辰大海</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/10/14/hello-world/" class="article-date">
-  <time datetime="2018-10-14T07:41:01.002Z" itemprop="datePublished">2018-10-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/14/hello-world/">Hello World</a>
-    </h1>
-  
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Wizz 后端冬令营</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">从 C 到 Golang</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/06/2020-02-06-end/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/06/2020-02-06-end/" class="post-title-link" itemprop="url">End</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-06 23:22:00 / 修改时间：23:30:04" itemprop="dateCreated datePublished" datetime="2020-02-06T23:22:00+08:00">2020-02-06</time>
+            </span>
+
+          
+
+        </div>
       </header>
+
     
-    <div class="article-entry" itemprop="articleBody">
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+          <p>目前来看，冬令营的更新应该要结束了。在 <a href="https://github.com/TGclub/Wizz-Home-Page" target="_blank" rel="noopener">https://github.com/TGclub/Wizz-Home-Page</a> 这个项目中，比较简单的使用 Gin 完成了工作室首页的后端。其中也踩了不少坑，可以进行参考。</p>
+<p>以后会不定期在 &lt;117503445.top&gt; 上分享相关的经验。</p>
+<p>接着就轮到你去做一些想做的项目、继续学习啦~</p>
+<p>欢迎加入 Wizz 工作室！如果你有意愿，可以联系 QQ:2254528916</p>
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/14/hello-world/" data-id="cjnx5cbo0000068v7nzqjk35b" class="article-share-link">Share</a>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/05/2020-02-05-GORM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/05/2020-02-05-GORM/" class="post-title-link" itemprop="url">GORM</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-05 09:50:00 / 修改时间：10:09:55" itemprop="dateCreated datePublished" datetime="2020-02-05T09:50:00+08:00">2020-02-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
+          <h2 id="GORM-导论"><a href="#GORM-导论" class="headerlink" title="GORM 导论"></a>GORM 导论</h2><p>GORM 是 Golang 中的 ORM 框架。我们先从数据库聊起。作为一个后端程序，要完成增加、删除、修改、查找这些功能，肯定不能只用一个变量来存放数据。这样的话，程序重启，数据就没了。必须要把数据储存起来。简单的数据储存可以用文本文件，但是稍微复杂一点就需要使用数据库。</p>
+<p>数据库是一件超级强大的工具，通过 SQL 和数据库交互。但是，在程序中直接写 SQL 比较复杂而且会造成安全问题，ORM 框架就可以解决这个问题，让我们不使用 SQL 也能使用数据库。这里我们主要学习 GORM。</p>
+<p>传统都是使用 Mysql 作为数据库，但 Mysql 的配置相对复杂一点。为了简单起见，这里使用 Sqlite3 作为数据库。</p>
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>可以参考这篇文章 <a href="https://blog.csdn.net/u010129985/article/details/81744357" target="_blank" rel="noopener">https://blog.csdn.net/u010129985/article/details/81744357</a></p>
+<p>除了 GORM 的基本用法，还有 Gin 与 GORM 配合搭建 REST API 服务。其实实践完这些，最基本的东西就已经写好了。</p>
+<p>但要注意到，他的代码有毒！有一些安全上的漏洞。这时候可以看一下我的项目 <a href="https://github.com/TGclub/Wizz-Home-Page" target="_blank" rel="noopener">https://github.com/TGclub/Wizz-Home-Page</a></p>
+<p>其中相关的部分在 apis 文件夹，对找出来的问题进行了修复。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>搭建好了 API，如何发起 HTTP 请求查看呢？</p>
+<p>我非常推荐 VS Code，然后安装 REST Client 插件 <a href="https://zhuanlan.zhihu.com/p/54266685" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/54266685</a></p>
+<p>此外，Postman 也是很好的选择</p>
+
       
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/2020-02-04-%E9%83%A8%E7%BD%B2%E5%90%8E%E7%AB%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/04/2020-02-04-%E9%83%A8%E7%BD%B2%E5%90%8E%E7%AB%AF/" class="post-title-link" itemprop="url">部署后端</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-04 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-04T00:00:00+08:00">2020-02-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-03 22:37:47" itemprop="dateModified" datetime="2020-02-03T22:37:47+08:00">2020-02-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="部署后端"><a href="#部署后端" class="headerlink" title="部署后端"></a>部署后端</h2><p>其实这几天，我也在写这个后端，刚刚写的差不多。</p>
+<p>这是 Github 的链接</p>
+<p><a href="https://github.com/TGclub/Wizz-Home-Page" target="_blank" rel="noopener">https://github.com/TGclub/Wizz-Home-Page</a></p>
+<p>关于如何部署已经花了足够的笔墨</p>
+<p>其中借助 docker 进行部署需要 Linux 和 Docker 的一些基础知识</p>
+<p>可以直接在本机 go run main.go 就能运行了</p>
+<p>运行成功后可以简单的浏览一下代码，并查阅<a href="http://ali.117503445.top:8080/swagger/index.html" target="_blank" rel="noopener">http://ali.117503445.top:8080/swagger/index.html</a></p>
+<p>观察为了达成提供这些接口的目的，这个项目做了哪些事情，使用了哪些库</p>
+<p>后面会一部分一部分的写博客来叙述。没想到这么晚才完成项目，所以可能不能保持每天的学习博客。</p>
+<p>但相信你已经初步拥有做一个后端项目的感觉了：）</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/03/2020-02-03-Gin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/03/2020-02-03-Gin/" class="post-title-link" itemprop="url">Gin</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-03 00:00:00 / 修改时间：10:51:21" itemprop="dateCreated datePublished" datetime="2020-02-03T00:00:00+08:00">2020-02-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Gin-概要"><a href="#Gin-概要" class="headerlink" title="Gin 概要"></a>Gin 概要</h2><p>在 Go 中,不需要第三方的包,就可以直接编写 http 后端程序</p>
+<p>可见</p>
+<p><a href="https://www.jianshu.com/p/be3d9cdc680b" target="_blank" rel="noopener">https://www.jianshu.com/p/be3d9cdc680b</a></p>
+<p>但是在 Web 开发中，有很多事情都是可以借助别人的力量完成的。使用第三方框架，可以让我们的开发变得更加简单。在这次学习中，我使用了 Gin 。Gin 是一个轻量级、高性能的 Go Web 框架，在很多企业的实践中得到了好评。</p>
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>学习使用一个框架，最重要的就是第一手资料：官方文档。</p>
+<p>So … <a href="https://github.com/gin-gonic/gin" target="_blank" rel="noopener">https://github.com/gin-gonic/gin</a> 冲鸭 ！</p>
+<p>把这个看完了，写一个网站首页的后端就非常轻松了。</p>
+<p>如果觉得英文有难度，可以看看中文翻译 <a href="https://shuangdeyu.gitee.io/2018/06/08/Gin%E6%A1%86%E6%9E%B6%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/#more" target="_blank" rel="noopener">https://shuangdeyu.gitee.io/2018/06/08/Gin%E6%A1%86%E6%9E%B6%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3/#more</a></p>
+<p>当然，第一次看肯定会有很多很多不懂的东西。第一次看不懂也没事，开始项目时边做边查，逐个击破！</p>
+<p>后面几天，也要接触各种各样的第三方库，来辅助我们的开发。我们需要始终保持学习能力。</p>
+<h2 id="今日任务"><a href="#今日任务" class="headerlink" title="今日任务"></a>今日任务</h2><p>搭建 Gin 项目</p>
+<p>参考学习方法 <a href="https://www.zhihu.com/question/265680460/answer/939438985" target="_blank" rel="noopener">https://www.zhihu.com/question/265680460/answer/939438985</a></p>
+<p>或者使用自己的方式，多运行、理解几个demo</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/02/2020-02-02-REST/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/02/2020-02-02-REST/" class="post-title-link" itemprop="url">REST</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-02 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-02T00:00:00+08:00">2020-02-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-01 23:10:51" itemprop="dateModified" datetime="2020-02-01T23:10:51+08:00">2020-02-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="REST"><a href="#REST" class="headerlink" title="REST"></a>REST</h2><p>阅读本章需要 Http 基础</p>
+<p>rest 是一种接口规范，举个例子，对于 Wizz 工作室主页，有一些历史事件，需要我们进行操作。后端要做的方法，就是提供一些接口。</p>
+<p>获取所有历史事件 GET ali.117503445.top/api/stories</p>
+<p>获取一个历史事件 GET ali.117503445.top/api/stories/{id}</p>
+<p>添加一个历史事件 POST ali.117503445.top/api/stories/{id}</p>
+<p>更改一个历史事件 PUT ali.117503445.top/api/stories/{id}</p>
+<p>删除一个历史事件 DELETE ali.117503445.top/api/stories/{id}</p>
+<p>这样，接口就是统一的，前端做起来也会很舒服</p>
+<p>可以去了解一下</p>
+<p><a href="https://www.runoob.com/w3cnote/restful-architecture.html" target="_blank" rel="noopener">https://www.runoob.com/w3cnote/restful-architecture.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/2020-02-01-JWT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/01/2020-02-01-JWT/" class="post-title-link" itemprop="url">JWT</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-01 00:00:00 / 修改时间：23:03:41" itemprop="dateCreated datePublished" datetime="2020-02-01T00:00:00+08:00">2020-02-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="JWT导论"><a href="#JWT导论" class="headerlink" title="JWT导论"></a>JWT导论</h2><p>先说一下身份认证。在网站中，肯定有一部分内容，是不可以被所有人访问的。比如我搭建一个 Wizz 工作室的主页，其中肯定不可以让所有人都拥有修改内容的权限。只有拥有管理员密码的人才可以使用某些功能。</p>
+<p>Jwt 是身份验证中的一项标准。在此之前，还有 token 之类的身份验证方式，但是 JWT 有更加好的优点。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p>以下 JWT，特指一个特殊的字符串。</p>
+<ol>
+<li>用户先进行登录，使用密码，后端接受密码，验证密码正确，就会把 用户名之类的信息放在 jwt 里，传给前端。</li>
+</ol>
+<p>接着有2个情况</p>
+<ul>
+<li><p>前端把jwt放在请求中，访问一些需要身份验证的接口（比如修改密码）。后端解析jwt，发现用户名是允许的，就成功的执行了操作。</p>
+</li>
+<li><p>对于没有密码的攻击者来说，jwt没有或者是错的，后端一看情况不对，就禁止请求者执行这个方法。</p>
+</li>
+</ul>
+<h2 id="继续学习"><a href="#继续学习" class="headerlink" title="继续学习"></a>继续学习</h2><p><a href="https://www.jianshu.com/p/576dbf44b2ae" target="_blank" rel="noopener">https://www.jianshu.com/p/576dbf44b2ae</a></p>
+<p>挺不错的文章，可以看一下</p>
+<p>不用完全看懂实现，可以以后再看，但是要熟悉流程。后期做项目的时候我们可以使用 第三方的库 来帮助我们进行开发。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/31/2020-01-31-JSON/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/31/2020-01-31-JSON/" class="post-title-link" itemprop="url">JSON</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-31 00:00:00 / 修改时间：21:53:10" itemprop="dateCreated datePublished" datetime="2020-01-31T00:00:00+08:00">2020-01-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="重新认识-Json"><a href="#重新认识-Json" class="headerlink" title="重新认识 Json"></a>重新认识 Json</h2><p>其实在 1月16日 ，已经对 Json 已经有了一定的学习。</p>
+<p>在一般的前端后端中，数据交换往往都是通过 Json 的形式进行的，非常普遍。</p>
+<p>如果那一次没有学会在 Go 中使用 Json，这次可要好好地看一下 Go语言圣经 中的Json部分了。因为，即使是使用一些 Go 的 Web 框架，对于 Json 的一些处理也是依靠原生的一些 Json 特性的。建议认真学习一波 ~</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/30/2020-01-30-http%E4%B8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/30/2020-01-30-http%E4%B8%8B/" class="post-title-link" itemprop="url">http下</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-30 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-30T00:00:00+08:00">2020-01-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-31 21:53:10" itemprop="dateModified" datetime="2020-01-31T21:53:10+08:00">2020-01-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>从 <a href="https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw" target="_blank" rel="noopener">https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw</a> 这里下载 图解HTTP</p>
+<p>阅读第一章到第四章</p>
+<p>后续内容可以以后再看</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/29/2020-01-29-http%E4%B8%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/29/2020-01-29-http%E4%B8%8A/" class="post-title-link" itemprop="url">http上</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-29 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-29T00:00:00+08:00">2020-01-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-30 11:40:10" itemprop="dateModified" datetime="2020-01-30T11:40:10+08:00">2020-01-30</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="http简介"><a href="#http简介" class="headerlink" title="http简介"></a>http简介</h2><p>我们先想象一下，我们使用浏览器访问一张网页的时候，发生了哪些事情。用户输入了网址，然后浏览器就会向网址对应的服务器发出请求。服务器收到请求，就会把被请求的网页、图片、音乐返回给浏览器，浏览器再把这些东西呈现给用户。其中，浏览器和服务器之间的通信内容，都是人能读懂的字符串（除了图片、音乐这种二进制文件）。那我们的后端是做什么的呢？我们的后端就是写一个程序，这个程序运行在服务器上，当浏览器丢给过来一个请求字符串，你的程序还给它一个返回字符串。也就是说，你的整个程序相当于一个函数，接收一个字符串参数，返回一个字符串参数。这是所有后端都普遍适用的。但是，这个函数是非常非常复杂的，所以我们使用不同的语言不同的框架，去降低实现这个函数的复杂度。</p>
+<p>这些字符串也不是随随便便的，而是有一定的格式要求。就像人们的书信都有格式要求。这些字符串也遵循http协议的一些规定，格式都是统一的，不同地方的不同写法都有一定的意义。</p>
+<p>由此可见，http是后端学习中的基础，各种语言后端都是http上的锦上添花。在进行后面阶段的学习前，了解http十分必要的。</p>
+<h2 id="观察生活中的http"><a href="#观察生活中的http" class="headerlink" title="观察生活中的http"></a>观察生活中的http</h2><p>浏览器通过http协议进行网络操作，下面以chrome为例观察http。打开baidu.com,按下F12打开开发者工具，切换到Network，再刷新一下，就能看很多条目。点击后，就能看到response headers，request headers。浏览器就通过这种方式，与服务器交换信息</p>
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>先简单的浏览一些网页，比如<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Overview" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Overview</a></p>
+<p>然后可以阅读 图解HTTP 。这本书写的超级棒，非常通俗易懂，非常推荐！！</p>
+<p>还是从 <a href="https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw" target="_blank" rel="noopener">https://pan.baidu.com/s/18JAhJv5V9IRKL3a8OTlXsw</a> 这里下载书籍</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/27/2020-01-28-Go%E5%B9%B6%E5%8F%91%E4%B8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Wizz">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wizz 后端冬令营">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/27/2020-01-28-Go%E5%B9%B6%E5%8F%91%E4%B8%8B/" class="post-title-link" itemprop="url">Go并发下</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-27 23:00:00 / 修改时间：12:36:40" itemprop="dateCreated datePublished" datetime="2020-01-27T23:00:00+08:00">2020-01-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><p>博主水平不够,这3天请自己看看书:&gt;</p>
+<p>Sorry &lt;( _ _ )&gt;</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Wizz</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Wizz</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
     </footer>
   </div>
-  
-</article>
-
 
   
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+<script src="/js/utils.js"></script>
 
-  
-    
+<script src="/js/motion.js"></script>
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li></ul>
-    </div>
-  </div>
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/10/14/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
-</aside>
-        
-      </div>
-      <footer id="footer">
+
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Pahp1<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
 </body>
 </html>
